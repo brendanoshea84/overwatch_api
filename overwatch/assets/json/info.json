@@ -1,0 +1,77 @@
+{
+    "characters": {
+
+        "ana": {
+            "personal": {
+                "role": "support",
+                "real name": "Ana Amari",
+                "species": "human",
+                "orginally": "egypt"
+            },
+            "picture" : { "img": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjU3oqs_prjAhXLw8QBHXloB68QjRx6BAgBEAU&url=https%3A%2F%2Foverwatch.gamepedia.com%2FAna&psig=AOvVaw0BgUENGsrkG0us2gqGTuEC&ust=1562320174008533"},
+            "info": {
+                "history": "Ana is one of the heroes in Overwatch. She is a former army sniper who has recently come out of hiding and rejoined the battle in order to protect her loved ones. Ana’s versatile arsenal allows her to affect heroes all over the battlefield. Her Biotic Rifle and Biotic Grenade both heal her allies and damage her enemies; her sidearm tranquilizes key targets, and Nano Boost gives one of her comrades a burst of healing and a considerable increase in power and resiliency alike."
+            },
+            "game info" : {
+                "health" : 200,
+                "armor" : 0,
+                "shield" : 0,
+                "healing" : 75,
+                "damage" : 70,
+                "ammo": 14,
+                "rate of fire" : 1.25,
+                "reload" : 1.5,
+                "headshot": 0
+            }
+        },
+
+        "ashe": {
+            "personal": {
+                "role": "offense",
+                "real name": "Elizabeth Caledonia ",
+                "species": "human",
+                "orginally": "Arizona, USA"
+            },
+            "picture": { "img": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwid5tbu_5rjAhVosIsKHV9nBzMQjRx6BAgBEAU&url=https%3A%2F%2Fplayoverwatch.com%2Fen-us%2Fheroes%2Fashe%2F&psig=AOvVaw2OpTiTl1g-0CIzk59O56-w&ust=1562320564524836"},
+            "info": {
+                "history" : "Ashe is a hero of Overwatch. She is the leader of the Deadlock Gang and a rebellious gunslinger who's not afraid to get her hands dirty. Ashe quickly fires her rifle from the hip or uses her weapon’s aim-down sights to line up a high damage shot. She blasts enemies by throwing dynamite, and her coach gun packs enough punch to put some distance between her and her foes. And Ashe is not alone, as she can call on her omnic ally B.O.B., to join the fray when the need arises."
+            },
+            "game info" : {
+                "health" : 200,
+                "armor" : 0,
+                "shield" : 0,
+                "healing" : 0,
+                "damage" : 40,
+                "ammo": 12,
+                "rate of fire" : 0.25,
+                "reload" : 4.1,
+                "headshot" : 80 
+            }   
+        },
+
+        "baptiste" : {
+            "personal": {
+                "role": "support",
+                "real name": "Jean-Baptiste ",
+                "species": "human",
+                "orginally": "Tortuga, Haiti"
+            },
+            "picture": {"img": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiEtr3XgpvjAhUC0qYKHRTlCKwQjRx6BAgBEAU&url=https%3A%2F%2Fplayoverwatch.com%2Fen-us%2Fheroes%2Fbaptiste%2F&psig=AOvVaw0dZlaoRbBkoo-cdcYTX_3q&ust=1562321323359615"},
+            "info": {
+                "history" : "An elite combat medic and ex-Talon operative, Baptiste now uses his skills to help those whose lives have been impacted by war. Jean-Baptiste Augustin was one of the 30 million children orphaned by the Omnic Crisis. With limited opportunities and resources, he enlisted in the military. The Caribbean Coalition, a pan-island force formed in response to the Crisis, became his new home. Guided by his innate desire to help people, Baptiste chose the path of a combat medic and served in an elite branch of the Caribbean Coalition’s special ops."
+            },
+            "game info" : {
+                "health" : 200,
+                "armor" : 0,
+                "shield" : 0,
+                "healing" : 60,
+                "damage" : 40,
+                "ammo": 45,
+                "rate of fire" : 0.45,
+                "reload" : 4.1,
+                "headshot" : 80 
+            }
+    }
+}
+
+}

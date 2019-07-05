@@ -1,0 +1,23 @@
+/*----- Nav Bar -----*/
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {float:none;}
+
+/*----- Main Page -----*/
+.main-page {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/img/OVR_Archives2019_012.0.png");
+    background-position: center;
+    background-size: cover;
+}
+/*----- Options -----*/
+.options{
+    position: relative;
+    top:50px;
+    text-align:center;
+}

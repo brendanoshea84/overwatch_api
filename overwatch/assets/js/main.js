@@ -8,7 +8,7 @@ $('input#get').click(function() {
         success: function(data) {
             $.each(data, function(index, item) {
                 $.each(item, function(key, value) {
-                    console.log(key, value.name);
+                    console.log(key, value.name, value.health);
                 });
                 container.append('<br></br>');
             });

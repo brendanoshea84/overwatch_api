@@ -5,3 +5,4 @@
 #stats for healing- https://overwatch.gamepedia.com/Healing
 #orginal api- https://overwatch-api.net/docs/v1
 
+#validate json file- https://jsonlint.com/ success

@@ -1,6 +1,6 @@
-[
-    {
-        "0": {
+{
+    "characters": [
+        {
             "affiliation": "Overwatch",
             "age": 60,
             "armour": 0,
@@ -15,9 +15,10 @@
             "shield": 0,
             "damage_per_sec": 84,
             "healing per second": 90,
-            "role": "support"
+            "role": "support",
+            "image": "https://cdn.vox-cdn.com/thumbor/nO9dMgORnBQPM2f_eHf3fIBqpzM=/0x0:1920x1161/1200x800/filters:focal(807x428:1113x734)/cdn.vox-cdn.com/uploads/chorus_image/image/58000763/Ana.0.jpg"
         },
-        "1": {
+        {
             "affiliation": null,
             "age": 30,
             "armour": 100,
@@ -32,9 +33,10 @@
             "shield": 0,
             "damage_per_sec": 450,
             "healing per second": 75,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://i.ytimg.com/vi/XNkFCsRAPtA/maxresdefault.jpg"
         },
-        "2": {
+        {
             "affiliation": "Mobile Exo-Force of the Korean Army",
             "age": 19,
             "armour": 400,
@@ -49,9 +51,10 @@
             "shield": 0,
             "damage_per_sec": 146,
             "healing per second": 0,
-            "role": "tank"
+            "role": "tank",
+            "image": "https://o.aolcdn.com/images/dims?quality=85&image_uri=http%3A%2F%2Fo.aolcdn.com%2Fhss%2Fstorage%2Fmidas%2F3f64571fb81da8419e06dc20775855ff%2F206611157%2Foverwatchdva.jpg&client=amp-blogside-v2&signature=9dd520629bfb538f5002fb66a75246b47b99281d"
         },
-        "3": {
+        {
             "affiliation": "Shimada Clan",
             "age": 35,
             "armour": 0,
@@ -66,9 +69,10 @@
             "shield": 0,
             "damage_per_sec": 111,
             "healing per second": 0,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://static.playoverwatch.com/media/screenshot/genji-screenshot-002.jpg"
         },
-        "4": {
+        {
             "affiliation": "Shimada Clan",
             "age": 38,
             "armour": 0,
@@ -83,9 +87,10 @@
             "shield": 0,
             "damage_per_sec": 125,
             "healing per second": 0,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://static.playoverwatch.com/media/screenshot/hanzo-screenshot-001.jpg"
         },
-        "5": {
+        {
             "affiliation": "Junkers",
             "age": 25,
             "armour": 0,
@@ -100,9 +105,10 @@
             "shield": 0,
             "damage_per_sec": 200,
             "healing per second": 0,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://i.ytimg.com/vi/icweH9yt03E/maxresdefault.jpg"
         },
-        "6": {
+        {
             "affiliation": null,
             "age": 26,
             "armour": 0,
@@ -117,9 +123,11 @@
             "shield": 0,
             "damage_per_sec": 80,
             "healing per second": 135,
-            "role": "support"
+            "role": "support",
+            "image": "http://www.e-sportsmag.com/wp-content/uploads/2018/03/LUCIO-OVERWATCH.jpg"
+
         },
-        "7": {
+        {
             "affiliation": "Deadlock Gang",
             "age": 37,
             "armour": 0,
@@ -134,9 +142,10 @@
             "shield": 0,
             "damage_per_sec": 140,
             "healing per second": 0,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://s3.dexerto.com/thumbnails/_thumbnailLarge/mccree-hot-potato-overwatch-workshop-mode-ptr.jpg"
         },
-        "8": {
+        {
             "affiliation": "Overwatch",
             "age": 31,
             "armour": 0,
@@ -151,9 +160,10 @@
             "shield": 0,
             "damage_per_sec": 90,
             "healing per second": 0,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://s3.dexerto.com/thumbnails/_thumbnailLarge/mei-lots-of-bugs-overwatch.jpg"
         },
-        "9": {
+        {
             "affiliation": "Overwatch",
             "age": 37,
             "armour": 0,
@@ -168,9 +178,10 @@
             "shield": 0,
             "damage_per_sec": 100,
             "healing per second": 50,
-            "role": "support"
+            "role": "support",
+            "image": "https://s3.dexerto.com/thumbnails/_thumbnailLarge/mercy-overwatch-highlight-play-of-the-game-blizzard-reddit.jpg"
         },
-        "10": {
+        {
             "affiliation": "Helix Security International",
             "age": 32,
             "armour": 0,
@@ -185,9 +196,10 @@
             "shield": 0,
             "damage_per_sec": 132,
             "healing per second": 0,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://cdn.segmentnext.com/wp-content/uploads/2015/06/Overwatch.jpg"
         },
-        "11": {
+        {
             "affiliation": "Talon",
             "age": 56,
             "armour": 0,
@@ -202,9 +214,10 @@
             "shield": 0,
             "damage_per_sec": 280,
             "healing per second": 120,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://i.etsystatic.com/11564499/r/il/df15e0/1223325470/il_fullxfull.1223325470_f2am.jpg"
         },
-        "12": {
+        {
             "affiliation": "Overwatch",
             "age": 61,
             "armour": 200,
@@ -219,9 +232,10 @@
             "shield": 2000,
             "damage_per_sec": 83,
             "healing per second": 0,
-            "role": "tank"
+            "role": "tank",
+            "image": "https://dotesports-media.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2018/08/11163122/ff49481b-10d4-411a-a438-bc38f7021e51.png"
         },
-        "13": {
+        {
             "affiliation": "Australian Liberation Front",
             "age": 48,
             "armour": 0,
@@ -236,9 +250,10 @@
             "shield": 0,
             "damage_per_sec": 195,
             "healing per second": 300,
-            "role": "tank"
+            "role": "tank",
+            "image": "data:image/jpeg;base64,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"
         },
-        "14": {
+        {
             "affiliation": "Overwatch",
             "age": 55,
             "armour": 0,
@@ -253,9 +268,10 @@
             "shield": 0,
             "damage_per_sec": 180,
             "healing per second": 40,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://static.playoverwatch.com/media/wallpaper/soldier-wallpaper-wide.jpg"
         },
-        "15": {
+        {
             "affiliation": "Vishkar Corporation",
             "age": 28,
             "armour": 0,
@@ -270,9 +286,10 @@
             "shield": 100,
             "damage_per_sec": 180,
             "healing per second": 40,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://fsmedia.imgix.net/9b/f2/f5/5f/4035/413f/9181/20531e539be8/overwatch-2016-12-06-14-44-41-00png.png?rect=0%2C93%2C1920%2C959&auto=format%2Ccompress&dpr=2&w=650"
         },
-        "16": {
+        {
             "affiliation": "Overwatch",
             "age": 57,
             "armour": 50,
@@ -287,9 +304,10 @@
             "shield": 0,
             "damage_per_sec": 116,
             "healing per second": 0,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://i.ytimg.com/vi/Ev0ZgWhGVuo/maxresdefault.jpg"
         },
-        "17": {
+        {
             "affiliation": "Overwatch",
             "age": 26,
             "armour": 0,
@@ -304,9 +322,10 @@
             "shield": 0,
             "damage_per_sec": 240,
             "healing per second": 0,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://static.playoverwatch.com/media/wallpaper/tracer-wallpaper-wide.jpg"
         },
-        "18": {
+        {
             "affiliation": "Talon",
             "age": 33,
             "armour": 0,
@@ -321,9 +340,10 @@
             "shield": 0,
             "damage_per_sec": 130,
             "healing per second": 0,
-            "role": "damage"
+            "role": "damage",
+            "image": "http://d1mt9jmphk9kik.cloudfront.net/teamdignitas/image1474041269.jpg"
         },
-        "19": {
+        {
             "affiliation": "Overwatch",
             "age": 29,
             "armour": 100,
@@ -338,9 +358,10 @@
             "shield": 600,
             "damage_per_sec": 60,
             "healing per second": 0,
-            "role": "tank"
+            "role": "tank",
+            "image": "https://cdn.mos.cms.futurecdn.net/Vp9tdzm22pHYDMVAsrovRE-1200-80.jpg"
         },
-        "20": {
+        {
             "affiliation": "Russian Defense Forces",
             "age": 28,
             "armour": 0,
@@ -355,9 +376,10 @@
             "shield": 200,
             "damage_per_sec": 190,
             "healing per second": 0,
-            "role": "tank"
+            "role": "tank",
+            "image": "https://i.ytimg.com/vi/gTcKbsKDkWk/maxresdefault.jpg"
         },
-        "21": {
+        {
             "affiliation": "The Shambali",
             "age": 20,
             "armour": 0,
@@ -372,9 +394,10 @@
             "shield": 150,
             "damage_per_sec": 120,
             "healing per second": 30,
-            "role": "support"
+            "role": "support",
+            "image": "https://s3.dexerto.com/thumbnails/_thumbnailLarge/awesome-zenyatta-overwatch-water-balloon-skin-concept.jpg"
         },
-        "22": {
+        {
             "affiliation": "Talon",
             "age": 30,
             "armour": 0,
@@ -389,9 +412,10 @@
             "shield": 0,
             "damage_per_sec": 160,
             "healing per second": 0,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://assets.vg247.com/current//2016/11/overwatch_sombra_blizzcon_2016_2.jpg"
         },
-        "23": {
+        {
             "affiliation": null,
             "age": null,
             "armour": 200,
@@ -406,9 +430,10 @@
             "shield": 900,
             "damage_per_sec": 132,
             "healing per second": 0,
-            "role": "tank"
+            "role": "tank",
+            "image": "https://i.ytimg.com/vi/6quws3xH-68/maxresdefault.jpg"
         },
-        "24": {
+        {
             "affiliation": "Deadlock Gang",
             "age": 39,
             "armour": 0,
@@ -423,9 +448,10 @@
             "shield": 0,
             "damage_per_sec": 160,
             "healing per second": 0,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://www.gamecrate.com/sites/default/files/field/image/Ashe-guide-6.jpg"
         },
-        "25": {
+        {
             "affiliation": "Reinhardt Wilhelm",
             "age": 23,
             "armour": 50,
@@ -440,9 +466,10 @@
             "shield": 600,
             "damage_per_sec": 58,
             "healing per second": 48,
-            "role": "support"
+            "role": "support",
+            "image": "https://s3.dexerto.com/thumbnails/_thumbnailLarge/reinhardt-bugs-montage-overwatch.jpg"
         },
-        "26": {
+        {
             "affiliation": "Talon",
             "age": 45,
             "armour": 0,
@@ -457,9 +484,10 @@
             "shield": 0,
             "damage_per_sec": 198,
             "healing per second": 0,
-            "role": "damage"
+            "role": "damage",
+            "image": "https://cdn.vox-cdn.com/thumbor/RXrKw6TBF1hTnY8Tf1ldSNOqfZo=/0x0:1900x1069/1200x800/filters:focal(798x383:1102x687)/cdn.vox-cdn.com/uploads/chorus_image/image/55649137/doomfist_screenshot_001.0.jpg"
         },
-        "27": {
+        {
             "affiliation": "Talon",
             "age": 48,
             "armour": 0,
@@ -474,9 +502,10 @@
             "shield": 0,
             "damage_per_sec": 50,
             "healing per second": 110,
-            "role": "support"
+            "role": "support",
+            "image": "https://static.playoverwatch.com/media/screenshot/moira-screenshot-002.jpg"
         },
-        "28": {
+        {
             "affiliation": "Lucheng Interstellar",
             "age": 14,
             "armour": 100,
@@ -491,7 +520,8 @@
             "shield": 100,
             "damage_per_sec": 125,
             "healing per second": 0,
-            "role": "tank"
+            "role": "tank",
+            "image": "https://static.playoverwatch.com/media/screenshot/wrecking-ball-screenshot-01.jpg"
         }
-    }
-]
+    ]
+}

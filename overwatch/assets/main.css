@@ -5,19 +5,60 @@
     text-align: center;
     width: 100%;
 }
-.navbar-brand {float:none;}
+
 
 /*----- Main Page -----*/
 .main-page {
     width: 100vw;
     height: 100vh;
-    background-image: url("../assets/img/OVR_Archives2019_012.0.png");
+    background-image: url("../assets/img/back4.png");
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
-/*----- Options -----*/
-.options{
-    position: relative;
-    top:50px;
-    text-align:center;
+
+#container-fluid{
+    padding: 0 !important;
 }
+/*----- Options for Solo, 1v1 and team-----*/
+
+
+/*----- Search options-----*/
+.list-group{
+    max-height: 300px;
+    margin-bottom: 10px;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+
+/*-----Icon field of characters----*/
+
+.innerPicter{
+    width: 100%;
+    height: 100%;   
+}
+
+.test{
+    width: 20%;
+    height: 15vh;
+    border: solid white 3px;
+    display: inline-block;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+
+/*-----Img of character----*/
+
+.characterImg{
+    width: 100%;
+    height: 400px;
+    background-image: url("../assets/img/character-img/ana.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+

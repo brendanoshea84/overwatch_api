@@ -11,16 +11,15 @@ xhttp.onreadystatechange = function () {
         //output goes into collapse area in "Character Icon" area
         var output = '';
         for (var i = 0; i < characters.length; i++) {
-            output += '<div class="test">' + '<img src="' + characters[i].image + '"' + 'width="100%" height="100%"' + ' ' + 'id="' + characters[i].id + '" ' + 'class="' + characters[i].role + '"/>' + '</div>';
+            output += '<div class="test' +' '+ characters[i].role+'">'+ '<img src="' + characters[i].image + '"' + 'width="100%" height="100%"' +'class="'+characters[i].role + '"/>' + '<name ="'+characters[i].name +'">'+'"</div>';
         }
         document.getElementById('innerPicter').innerHTML = output;
 
-
     }
 };
+
 xhttp.open("GET", "assets/js/info.json", true);
 xhttp.send();
-
 
 //search for characters in search area
 
@@ -32,7 +31,7 @@ $(document).ready(function () {
         var searchField = $('#search').val();
         var expression = new RegExp(searchField, "i");
         $.getJSON('assets/js/info.json', function (data) {
-            $(data.characters).each (function(key, value) {
+            $(data.characters).each(function (key, value) {
                 if (value.name.search(expression) != -1 || value.real_name.search(expression) != -1) {
                     $('#result').append('<li class="list-group-item link-class"><img src="' + value.image + '" height="40" width="40" class="img-thumbnail" /> ' + value.name + ' | <span class="text-muted">' + value.real_name + '</span></li>');
                 }
@@ -40,14 +39,43 @@ $(document).ready(function () {
         });
     });
 
-    $('#result').on('click', 'li', function () {
-        var click_text = $(this).text().split('|');
-        $('#search').val($.trim(click_text[0]));
-        $("#result").html('');
-    });
 });
 
 
+$('#result').on('click', 'li', function () {
+    var click_text = $(this).text().split('|');
+    $('#search').val($.trim(click_text[0]));
+    $("#result").html('');
+});
+
+//Icon area- button options to hide and show different characters in their different roles
+//Show all with all btn
+$('#all-toggle').click(function(){
+    $('.damage').css('display', 'inline-block')
+    $('.tank').css('display', 'inline-block')
+    $('.support').css('display', 'inline-block');
+
+});
+//Show damage characters
+$('#damage-toggle').click(function(){
+    $('.damage').css('display', 'inline-block')
+    $('.tank').css('display', 'none')
+    $('.support').css('display', 'none');
+
+});
+//Show tank characters
+$('#tank-toggle').click(function(){
+    $('.tank').css('display', 'inline-block')
+    $('.damage').css('display', 'none')
+    $('.support').css('display', 'none');
+});
+//Show support characters
+$('#support-toggle').click(function(){
+    $('.support').css('display', 'inline-block')
+    $('.tank').css('display', 'none')
+    $('.damage').css('display', 'none');
+
+});
 
 
 

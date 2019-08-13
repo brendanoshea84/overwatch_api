@@ -11,7 +11,7 @@ xhttp.onreadystatechange = function () {
         //output goes into collapse area in "Character Icon" area
         var output = '';
         for (var i = 0; i < characters.length; i++) {
-            output += '<div class="test' +' '+ characters[i].role+'">'+ '<img src="' + characters[i].image + '"' + 'width="100%" height="100%"' +'class="'+characters[i].role + '"/>' + '<name ="'+characters[i].name +'">'+'"</div>';
+            output += '<div class="characterBox' +' '+ characters[i].role+'">'+ '<img src="' + characters[i].image + '"' + 'width="100%" height="100%"' +'class="'+characters[i].role + '"/>' + '<name ="'+characters[i].name +'">'+'"</div>';
         }
         document.getElementById('innerPicter').innerHTML = output;
 
@@ -78,4 +78,8 @@ $('#support-toggle').click(function(){
 });
 
 
+//Single player information area
 
+$("#characterBox").click(function(){
+    console.log("worki");
+})

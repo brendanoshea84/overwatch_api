@@ -10,7 +10,7 @@
 /*----- Main Page -----*/
 .main-page {
     width: 100vw;
-    height: 100vh;
+    height: 1000px;
     background-image: url("../assets/img/back4.png");
     background-position: center;
     background-size: cover;
@@ -21,7 +21,9 @@
     padding: 0 !important;
 }
 /*----- Options for Solo, 1v1 and team-----*/
-
+.teamRow{
+    display: none;
+}
 
 /*----- Search options-----*/
 .list-group{
@@ -41,7 +43,7 @@
     height: 100%;   
 }
 
-.test{
+.characterBox{
     width: 20%;
     height: 15vh;
     border: solid white 3px;
@@ -62,3 +64,9 @@
     background-repeat: no-repeat;
 }
 
+/*-------singleInformation--------*/
+.singleInformation{
+    width: 80%;
+    border: solid 5px blue;
+    height: 500px;
+}

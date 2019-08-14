@@ -11,9 +11,24 @@ xhttp.onreadystatechange = function () {
         //output goes into collapse area in "Character Icon" area
         var output = '';
         for (var i = 0; i < characters.length; i++) {
-            output += '<div class="characterBox' +' '+ characters[i].role+'" id="'+characters[i].id+'">'+ '<img src="' + characters[i].image + '"' + 'width="100%" height="100%"' +'class="'+characters[i].role + '"/>' + '<name ="'+characters[i].name +'">'+'"</div>';
+            output += '<div class="characterBox' + ' ' + characters[i].role + '" id="' + characters[i].id + '">' + '<img src="' + characters[i].image + '"' + 'width="100%" height="100%"' + 'class="' + characters[i].role + '"/>' + '<name ="' + characters[i].name + '">' + '</div>';
         }
         document.getElementById('innerPicter').innerHTML = output;
+
+        //click img to get sibling json data
+        var divs = document.querySelectorAll(".characterBox");
+
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].addEventListener('click', function (event) {
+                const result = characters.find(item => {
+                    return item.id == this.getAttribute("id")
+                });
+                //changing background image for clicked new character
+                $('.main-page').css('background-image', 'url("'+result.image+'")');
+                
+            });
+        }
+
 
     }
 };
@@ -50,36 +65,29 @@ $('#result').on('click', 'li', function () {
 
 //Icon area- button options to hide and show different characters in their different roles
 //Show all with all btn
-$('#all-toggle').click(function(){
+$('#all-toggle').click(function () {
     $('.damage').css('display', 'inline-block')
     $('.tank').css('display', 'inline-block')
     $('.support').css('display', 'inline-block');
 
 });
 //Show damage characters
-$('#damage-toggle').click(function(){
+$('#damage-toggle').click(function () {
     $('.damage').css('display', 'inline-block')
     $('.tank').css('display', 'none')
     $('.support').css('display', 'none');
 
 });
 //Show tank characters
-$('#tank-toggle').click(function(){
+$('#tank-toggle').click(function () {
     $('.tank').css('display', 'inline-block')
     $('.damage').css('display', 'none')
     $('.support').css('display', 'none');
 });
 //Show support characters
-$('#support-toggle').click(function(){
+$('#support-toggle').click(function () {
     $('.support').css('display', 'inline-block')
     $('.tank').css('display', 'none')
     $('.damage').css('display', 'none');
 
 });
-
-
-//Single player information area
-
-var info = JSON.parse("xhttp");
-
-console.log(info);

@@ -10,7 +10,7 @@
 /*----- Main Page -----*/
 .main-page {
     width: 100vw;
-    height: 1000px;
+    height: 2000px;
     background-image: url("../assets/img/back4.png");
     background-position: center;
     background-size: cover;
@@ -44,7 +44,7 @@
 }
 
 .characterBox{
-    width: 20%;
+    width: 18%;
     height: 15vh;
     border: solid white 3px;
     display: inline-block;

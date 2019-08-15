@@ -20,16 +20,18 @@ xhttp.onreadystatechange = function () {
 
         for (var i = 0; i < divs.length; i++) {
             divs[i].addEventListener('click', function (event) {
+                //get sibling data when character is selected
                 const result = characters.find(item => {
                     return item.id == this.getAttribute("id")
                 });
+
                 //changing background image for clicked new character
                 $('.main-page').css('background-image', 'url("'+result.image+'")');
+                console.log(result)
                 
+                              
             });
         }
-
-
     }
 };
 
@@ -91,3 +93,7 @@ $('#support-toggle').click(function () {
     $('.damage').css('display', 'none');
 
 });
+
+
+
+

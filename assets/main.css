@@ -91,10 +91,23 @@
     width: 80%;
     border: solid 5px blue;
     height: 500px;
-    background-color: rgba(115, 129, 160, 0.6);
     outline: 5px solid red;
 }
 
 .redInformation>h2 {
     color: aliceblue;
+}
+
+.redInformation {
+    background-color: rgba(153, 83, 83, 0.6);
+}
+
+.blueInformation {
+    background-color: rgba(115, 129, 160, 0.6);
+}
+
+#unknown {
+    height: 200px;
+    width: 200px;
+    background-image: url("../assets/img/character-img/unknow.png");
 }

@@ -86,7 +86,8 @@
 
 /*-------singleInformation--------*/
 
-.redInformation {
+.redInformation,
+.blueInformation {
     width: 80%;
     border: solid 5px blue;
     height: 500px;

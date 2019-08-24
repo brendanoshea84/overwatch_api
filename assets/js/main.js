@@ -15,7 +15,6 @@ xhttp.onreadystatechange = function() {
 };
 let characters;
 let hidden = 0;
-//let characters;
 
 const getCharacterData = function(characters) {
 
@@ -45,19 +44,24 @@ const isolateCharacter = function(characters) {
 
             //changing background image for clicked new character
             $('.main-page').css('background-image', 'url("' + result.image + '")');
+            $('.targetchart').html("");
             createCharacterTable(result);
-            $('.characterBox').hide()
+            $('.characterBox').hide();
+
         });
     }
     hidden = 1;
-    console.log(characters);
-
 
 }
 
 const createCharacterTable = function(result) {
-    $('.singleInformation').append("<h2>" + result.name + "</h2>")
-        //make pretty tables here
+    $('.targetchart').append("");
+    $('.targetchart').append("<h2>" + result.name + "</h2>");
+    $('.targetchart').append("<h2>" + result.real_name + "</h2>");
+    $('.targetchart').append("<h2>" + result.height + "</h2>");
+    $('.targetchart').append("<h2>" + result.name + "</h2>");
+    $('.targetchart').append("<h2>" + result.name + "</h2>");
+    //make pretty tables here
 }
 
 const getJSONData = function() {
@@ -75,9 +79,10 @@ $(document).ready(function() {
         var searchField = $('#search').val();
         var expression = new RegExp(searchField, "i");
         $.getJSON('assets/js/info.json', function(data) {
-            $(data.characters).each(function(key, value) {
+            $(characters).each(function(key, value) {
                 if (value.name.search(expression) != -1 || value.real_name.search(expression) != -1) {
-                    $('#result').append('<li class="list-group-item link-class"><img src="' + value.image + '" height="40" width="40" class="img-thumbnail" /> ' + value.name + ' | <span class="text-muted">' + value.real_name + '</span></li>');
+                    $('#result').append('<li class="list-group-item link-class searching" id="' + value.id + '"><img src="' + value.image + '" height="40" width="40" class="img-thumbnail" /> ' + value.name + ' | <span class="text-muted">' + value.real_name + '</span></li>');
+
                 }
             });
         });
@@ -88,9 +93,11 @@ $(document).ready(function() {
 $('#result').on('click', 'li', function() {
     var click_text = $(this).text().split('|');
     $('#search').val($.trim(click_text[0]));
-    console.log(this);
+
+    console.log(this.id);
     $("#result").html('');
 });
+
 
 //Icon area- button options to hide and show different characters in their different roles
 //Show all with all btn
@@ -126,4 +133,35 @@ $('#hide-toggle').click(function() {
     $('.tank').css('display', 'none')
     $('.damage').css('display', 'none');
 
+});
+//functions for team blue
+$('#hide-toggle').click(function() {
+    $('.support').css('display', 'none')
+    $('.tank').css('display', 'none')
+    $('.damage').css('display', 'none');
+
+});
+//show characters if team buttons are clicked
+var blue = document.getElementById("teamBlue");
+var red = document.getElementById("teamRed");
+
+$(red).click(function() {
+    $('.support').css('display', 'inline-block')
+    $('.tank').css('display', 'inline-block')
+    $('.damage').css('display', 'inline-block');
+
+
+    $("#blueInfo").removeClass("targetchart");
+    console.log("changed");
+    $("#redInfo").addClass("targetchart");
+
+});
+$(blue).click(function() {
+    $('.support').css('display', 'inline-block')
+    $('.tank').css('display', 'inline-block')
+    $('.damage').css('display', 'inline-block');
+
+    $("#redInfo").removeClass("targetchart");
+    console.log("changed");
+    $("#blueInfo").addClass("targetchart");
 });

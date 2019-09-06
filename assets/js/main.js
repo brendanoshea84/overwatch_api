@@ -39,14 +39,11 @@ const isolateCharacter = function(characters) {
     for (var i = 0; i < divs.length; i++) {
         divs[i].addEventListener('click', function(event) {
             const result = characters.find(item => {
-                return item.id == this.getAttribute("id")
+                return item.id == this.getAttribute("id");
+
             });
 
-            //changing background image for clicked new character
-            $('.main-page').css('background-image', 'url("' + result.image + '")');
-            $('.targetchart').html("");
-            createCharacterTable(result);
-            $('.characterBox').hide();
+            selectingOptions(result);
 
         });
     }
@@ -54,15 +51,28 @@ const isolateCharacter = function(characters) {
 
 }
 
-const createCharacterTable = function(result) {
-    $('.targetchart').append("");
-    $('.targetchart').append("<h2>" + result.name + "</h2>");
-    $('.targetchart').append("<h2>" + result.real_name + "</h2>");
-    $('.targetchart').append("<h2>" + result.height + "</h2>");
-    $('.targetchart').append("<h2>" + result.name + "</h2>");
-    $('.targetchart').append("<h2>" + result.name + "</h2>");
-    //make pretty tables here
+
+//Global scope for character selection for both img and search
+
+var selectingOptions = function(result) {
+    //changing background image for clicked new character
+    $('.backgroungImg').css('background-image', 'url("' + result.image + '")');
+    $('.characterImg').css('background-image', 'url("' + result.image + '")');
+
+    createCharacterTable(result);
+    $('.characterBox').hide();
+
 }
+
+const createCharacterTable = function(result) {
+    //create table
+    $('#targetChart').append("<h2 id='name'>" + result.name + "</h2>"),
+        $('#targetChart').append("<h2 id='name'>Real Name:" + result.real_name + "</h2>")
+}
+
+
+
+
 
 const getJSONData = function() {
     xhttp.open("GET", "assets/js/info.json", true);
@@ -93,8 +103,11 @@ $(document).ready(function() {
 $('#result').on('click', 'li', function() {
     var click_text = $(this).text().split('|');
     $('#search').val($.trim(click_text[0]));
+    const result = characters.find(value => {
+        return value.id == this.getAttribute("id");
+    });
 
-    console.log(this.id);
+    selectingOptions(result);
     $("#result").html('');
 });
 
@@ -164,4 +177,4 @@ $(blue).click(function() {
     $("#redInfo").removeClass("targetchart");
     console.log("changed");
     $("#blueInfo").addClass("targetchart");
-});
+})
